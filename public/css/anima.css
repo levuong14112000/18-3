@@ -1,0 +1,69 @@
+
+.button {
+    color: #000;
+}
+.container1 {
+    /*max-width: 600px;*/
+    /*margin: 50px auto;*/
+}
+
+.h-animation {
+    font-family: Arial, sans-serif;
+    font-size: 60px;
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+.h-animation span {
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+}
+.h-animation span:after {
+    content: '';
+    background: #40c6ff;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+}
+.h-animation span {
+    animation: display-text 0.5s both;
+}
+.h-animation span:after {
+    animation: headline-animation 0.5s both;
+}
+
+.h-animation span:nth-child(1):after {
+    animation-delay: .5s;
+}
+.h-animation span:nth-child(2),
+.h-animation span:nth-child(2):after {
+    animation-delay: .6s;
+}
+.h-animation span:nth-child(3),
+.h-animation span:nth-child(3):after {
+    animation-delay: .7s;
+}
+.h-animation span:nth-child(1) {
+    animation-delay: .7s;
+}
+.h-animation span:nth-child(2) {
+    animation-delay: .8s;
+}
+.h-animation span:nth-child(3) {
+    animation-delay: .9s;
+}
+@keyframes headline-animation {
+    0% { transform: translate(-110%, 0);}
+    45%, 55% { transform: translate(0,0);}
+    100% {transform: translate(110%, 0);}
+}
+@keyframes display-text {
+    0% { color: transparent;}
+    100% { color: #fff ; opacity: 0.85}
+}
