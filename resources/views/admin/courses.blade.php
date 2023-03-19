@@ -28,11 +28,10 @@
         <lable>Hình ảnh</lable>
         <input class="form-control" type="file" name="txtpicture" placeholder="Nhập ảnh">
         <lable>HOT</lable>
-        <select class="form-control" name="txthot" id="">
+        <select class="form-control select-form" name="txthot" id="">
             <option value="0">Normal</option>
             <option value="1">HOT</option>
         </select>
-        <br>
         <button style="margin: 10px 0px 10px 0px;" class="btn btn-primary" type="submit">Thêm</button>
     </form>
 

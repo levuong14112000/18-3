@@ -3,7 +3,7 @@
         position: relative;
         width: 100vw;
         max-width: 100%;
-        height: 50px;
+        height: 30px;
         overflow-x: hidden;
     }
     .track {

@@ -2,11 +2,6 @@
 *{
     scroll-behavior: smooth;
 }
-/*img:hover{*/
-/*    opacity: 0.8;*/
-/*    padding: 10px;*/
-/*    transition:all linear 300ms;*/
-/*}*/
 .navbar-inverse .navbar-nav > li > a{
     color : #777 ;
 }
@@ -33,7 +28,6 @@ main{
 
 /* SET LESSIONS */
 .set-lessions{
-    /* padding-top: 80px; */
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -421,17 +415,8 @@ img {vertical-align: middle;}
 .respon-navbar{
     display:none ;
 }
-@media only screen and (max-width: 768px) {
-    .respon-navbar {
-        display: inline-block;
-        float: left;
-        margin-left: 30px;
-    }
-    .header-z{
-        text-align: center;
 
-    }
-    .navbar-inverse .navbar-nav > li > a{
-        padding: 0;
-    }
-}
+
+
+
+

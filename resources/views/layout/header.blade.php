@@ -44,6 +44,14 @@
                         </form>
                 </li>
                 <li><a href="#home">TRANG CHỦ</a></li>
+                <li style="margin-right: 50px;"><a><i style="font-size: 1.2em" class="fa fa-solid fa-bars menu top_menu"></i>
+                    </a>
+                    <ul class="show-menu" >
+                        @foreach($mn as $m)
+                            <li><a href="{{route('kh',[$m->course_id])}}">{{$m->course_name}}</a> </li>
+                        @endforeach
+                    </ul>
+                </li>
                 <li><a href="#features-sec">ĐẶC TRƯNG</a></li>
                 <li><a href="#course-sec">KHOÁ HỌC</a></li>
                 <li><a href="#faculty-sec">GIẢNG VIÊN</a></li>
@@ -51,17 +59,10 @@
                 @if(Auth::check())
                     <li><a href="#">Hello {{Auth::user()->username}}</a></li>
                 @else
-                    <li><a href="/login">Đăng nhập</a></li>
+                    <li><a href="/login">ĐĂNG NHẬP</a></li>
                 @endif
 
-                <li><a><i style="font-size: 1.2em" class="fa fa-solid fa-bars menu top_menu"></i>
-                    </a>
-                    <ul class="show-menu">
-                        @foreach($mn as $m)
-                        <li><a href="{{route('kh',[$m->course_id])}}">{{$m->course_name}}</a> </li>
-                        @endforeach
-                    </ul>
-                </li>
+
             </ul>
         </div>
 
