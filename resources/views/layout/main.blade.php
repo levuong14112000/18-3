@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="{{asset('css/respon.css')}}">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
+    
 </head>
 <body>
 

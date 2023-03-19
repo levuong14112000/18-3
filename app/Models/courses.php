@@ -12,6 +12,15 @@ class courses extends Model
     public $timestamps = false; //  khong can theo gioi thoi gian ghi va cap nhap ( true nguoc lai
     public $incrementing = false;
     protected $attributes = ['description' =>'']; // gia tri mac dinh cua mo ta la rong
-    protected $fillable = ['course_name','description']; // lay gia tri cua cac row
+    protected $fillable = [
+        'course_name',
+        'description',
+        'price',
+        'course_time',
+        'duration',
+        'picture',
+        'hot',
+        'deleted'
+    ]; // lay gia tri cua cac row
     use HasFactory ;
 }

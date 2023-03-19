@@ -97,10 +97,7 @@ class myController extends Controller
     {
         return view('contact');
     }
-    public function admin()
-    {
-        return view('admin.admin');
-    }
+    
     public function corkie()
     {
         return view('inputapi');

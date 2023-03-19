@@ -1,5 +1,5 @@
-<div class="container-fluid text-center" style=" background-color: #1A94C4;
-        height: 70px;
+<div class="container text-center" style=" background-color: #428bca;
+        height: 10vh;
          line-height: 70px">
     <div class="row">
         <div class="col-12">
