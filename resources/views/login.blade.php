@@ -90,17 +90,18 @@
           <div class="row g-0 bg-primary-dark-op">
             <!-- Meta Info Section -->
             <div class="hero-static col-lg-4 d-none d-lg-flex flex-column justify-content-center">
-              <div class="p-4 p-xl-5 flex-grow-1 d-flex align-items-center">
+              <div class="p-4 p-xl-5 flex-grow-1 d-flex align-items-center ">
                 <div class="w-100">
-                  <a class="link-fx fw-semibold fs-2 text-white" href="index.html">
-                    One<span class="fw-normal">UI</span>
+                  <a class="link-fx fw-semibold fs-2 text-white" href="/">
+                    Let's <span class="fw-normal">UAB</span>
                   </a>
                   <p class="text-white-75 me-xl-8 mt-2">
-                    Welcome to your amazing app. Feel free to login and start managing your projects and clients.
+                    Welcome to your amazing feelings.
                   </p>
+                  <h4 class="text-light">UAB say " H I !"</h4>
                 </div>
               </div>
-              <div class="p-4 p-xl-5 d-xl-flex justify-content-between align-items-center fs-sm">
+              <!-- <div class="p-4 p-xl-5 d-xl-flex justify-content-between align-items-center fs-sm">
                 <p class="fw-medium text-white-50 mb-0">
                   <strong>OneUI 5.2</strong> &copy; <span data-toggle="year-copy"></span>
                 </p>
@@ -115,7 +116,7 @@
                     <a class="text-white-75 fw-medium" href="javascript:void(0)">Terms</a>
                   </li>
                 </ul>
-              </div>
+              </div> -->
             </div>
             <!-- END Meta Info Section -->
 

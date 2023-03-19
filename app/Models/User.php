@@ -22,6 +22,7 @@ class User extends Authenticatable
     public $timestamps = false;
     protected $fillable = [
         'username',
+        'full_name',
         'password',
     ];
 

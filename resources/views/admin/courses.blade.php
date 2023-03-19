@@ -1,5 +1,16 @@
 @extends('admin.admin')
 @section('admincontent')
+@if(session('msg'))
+@if(session('msg') == 'exists')
+<div class="alert alert-danger">
+    <p>Khoá học đã tồn tại</p>
+</div>
+@else
+<div class="alert alert-success">
+    <p>Thêm thành công</p>
+</div>
+@endif
+@endif
 <h1 class="text-center">Courses</h1>
 <div class="input-value">
     <form action="/admin/courses/add" method="post" enctype="multipart/form-data">

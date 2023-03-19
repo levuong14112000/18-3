@@ -1,6 +1,16 @@
 @extends('admin.admin')
 @section('admincontent')
-
+@if(session('msg'))
+@if(session('msg') == 'exists')
+<div class="alert alert-danger">
+    <p>Môn học đã tồn tại</p>
+</div>
+@else
+<div class="alert alert-success">
+    <p>Thêm thành công</p>
+</div>
+@endif
+@endif
 <h1 class="text-center">Subject</h1>
 <div class="input-value">
     <form action="/admin/subjects/add" method="post" enctype="multipart/form-data">
@@ -10,7 +20,7 @@
         <!-- <lable>Nội Dung</lable>
         <textarea name="sub_content" class="form-control" id="" cols="30" rows="10"></textarea> -->
         <lable>Hình</lable>
-        <input class="form-control" type="file" name="sub_picture">
+        <input class="form-control" type="file" name="sub_picture" required>
         <lable>Khoá Học</lable>
         <select name="course_id" id="">
             @foreach($data_course as $item)
@@ -28,7 +38,7 @@
             <option value="0">Normal</option>
             <option value="1">HOT</option>
         </select>
-        <button style="margin: 10px 0px 10px 0px;" class="btn btn-primary" type="submit">Gửi</button>
+        <button style="margin: 10px 0px 10px 0px;" class="btn btn-primary" type="submit">Thêm</button>
     </form>
 
 </div>
@@ -55,7 +65,7 @@
                 <!-- <td>{{$item->content}}</td> -->
                 <td>{{$item->course_name}}</td>
                 <td>{{$item->full_name}}</td>
-                <td>{{$item->hot}}</td>
+                <td>{{$item->hotsub}}</td>
                 <!-- <td>{{$item->hot}}</td> -->
                 <td>
                     <button class="btn btn-primary" onclick="transferData('{{$item->subject_id}}','{{$item->subject_name}}','{{$item->course_id}}','{{$item->user_id}}','{{$item->hot}}')" data-toggle="modal" data-target="#exampleModal">

@@ -8,9 +8,6 @@
 
         <h3 style="text-align: center">{{$n->full_name}}</h3>
         <hr />
-        <h4 style="text-align: center">{{$n->address}} <br />
-            {{$n->course_name}}
-        </h4>
         <p style="text-align: center">
             {{$n->decription}}
         </p>

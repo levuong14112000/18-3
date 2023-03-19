@@ -3,7 +3,7 @@
 @if(session('msg'))
 @if(session('msg') == 'exists')
 <div class="alert alert-danger">
-    <p>Môn học đã tồn tại</p>
+    <p>Bài học đã tồn tại</p>
 </div>
 @else
 <div class="alert alert-success">

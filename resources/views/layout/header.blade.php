@@ -48,7 +48,11 @@
                 <li><a href="#course-sec">KHOÁ HỌC</a></li>
                 <li><a href="#faculty-sec">GIẢNG VIÊN</a></li>
                 <li><a href="#contact-sec">LIÊN HỆ</a></li>
-                <li><a href="/login">Đăng nhập</a></li>
+                @if(Auth::check())
+                    <li><a href="#">Hello {{Auth::user()->username}}</a></li>
+                @else
+                    <li><a href="/login">Đăng nhập</a></li>
+                @endif
 
                 <li><a><i style="font-size: 1.2em" class="fa fa-solid fa-bars menu top_menu"></i>
                     </a>

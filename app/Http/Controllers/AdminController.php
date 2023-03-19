@@ -18,7 +18,7 @@ class AdminController extends Controller
     }
     public function admin_courses()
     {
-        $data_course = Courses::where('deleted',0)->get();
+        $data_course = Courses::where('deleted',0)->orderBy('course_id','DESC')->get();
         $values = [
             'data_course' => $data_course
         ];
@@ -32,6 +32,8 @@ class AdminController extends Controller
         $data = Subject::where('Subject.deleted',0)
         ->join('Courses as c','c.course_id','=','Subject.course_id')
         ->join('Users as u','u.user_id','=','Subject.user_id')
+        ->select('*','Subject.hot as hotsub')
+        ->orderBy('Subject.subject_id','DESC')
         ->get();
         $data_user = User::where('role_id',2)->get();
         $values = [
@@ -46,6 +48,7 @@ class AdminController extends Controller
         $data1 = Subject::all();
         $data_lessions = Lessions::where('Lessions.deleted',0)
             ->join('Subject as s','s.subject_id','=','Lessions.subject_id')
+            ->orderBy('Lessions.lession_id','DESC')
             ->get();
         $values = [
             'data1' => $data1,
@@ -80,7 +83,7 @@ class AdminController extends Controller
     }
 
     public function add_subjects(Request $request){
-        $isExists = Subject::where('subject_name', $request->lession_name)->exists();
+        $isExists = Subject::where('subject_name', $request->sub_name)->exists();
         if($isExists){
             return redirect()->back()->with('msg', 'exists');
         }else{

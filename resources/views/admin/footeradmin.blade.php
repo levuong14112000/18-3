@@ -1,4 +1,4 @@
-<div class="container text-center" style=" background-color: #428bca;
+<div class="container text-center" style=" background-color: #007bff;
         height: 10vh;
          line-height: 70px">
     <div class="row">
