@@ -17,11 +17,11 @@
                 <li class="list-footer"><a href="#course-sec">KHOÁ HỌC</a></li>
                 <li class="list-footer"><a href="#faculty-sec">GIẢNG VIÊN</a></li>
                 <li class="list-footer"><a href="#contact-sec">LIÊN HỆ</a></li>
-                @if(Auth::check())
-                    <li><a href="#">Hello {{Auth::user()->username}}</a></li>
-                @else
+{{--                @if(Auth::check())--}}
+{{--                    <li><a href="#">Hello {{Auth::user()->username}}</a></li>--}}
+{{--                @else--}}
                     <li><a href="/login">ĐĂNG NHẬP</a></li>
-                @endif
+{{--                @endif--}}
             </ul>
         </div>
         <div class="text-center col-lg-4 col-sm-4 col-md-4">

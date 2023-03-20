@@ -26,7 +26,7 @@
     .navbar-inverse .navbar-nav > li > a {
         color: #fff;
         padding: 4px;
-        line-height: 4;
+        line-height: 5;
     }
     #menu{
         letter-spacing: 0;
@@ -35,8 +35,8 @@
 @media only screen and (max-width: 992px) {
     .navbar-inverse .navbar-nav > li > a {
         color: #fff;
-        padding: 4px;
-        line-height: 4;
+        padding: 0 5px 0 5px;
+
     }
     #menu{
         letter-spacing: 0;
@@ -54,6 +54,9 @@
     }
     .navbar-inverse .navbar-nav > li > a{
         padding: 0;
+    }
+    *{
+        text-align: center;
     }
 }
 

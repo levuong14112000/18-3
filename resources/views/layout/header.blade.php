@@ -56,11 +56,11 @@
                 <li><a href="#course-sec">KHOÁ HỌC</a></li>
                 <li><a href="#faculty-sec">GIẢNG VIÊN</a></li>
                 <li><a href="#contact-sec">LIÊN HỆ</a></li>
-                @if(Auth::check())
-                    <li><a href="#">Hello {{Auth::user()->username}}</a></li>
-                @else
+{{--                @if(Auth::check())--}}
+{{--                    <li><a href="#">Hello {{Auth::user()->username}}</a></li>--}}
+{{--                @else--}}
                     <li><a href="/login">ĐĂNG NHẬP</a></li>
-                @endif
+{{--                @endif--}}
 
 
             </ul>

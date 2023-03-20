@@ -16,33 +16,35 @@
     <form action="/admin/courses/add" method="post" enctype="multipart/form-data">
         @csrf
         <lable>Tên Khóa Học :</lable>
-        <input class="form-control" type="text" name="txtcoursename" placeholder="Nhập Tên Khóa Học">
+        <input class="form-control " type="text" name="txtcoursename" placeholder="Nhập Tên Khóa Học">
         <lable>Mô Tả</lable>
-        <textarea name="txtdescription" class="form-control" id="" cols="30" rows="10"></textarea>
+        <textarea name="txtdescription input-admin" class="form-control" id="" cols="30" rows="10"></textarea>
         <lable>Giá</lable>
-        <input class="form-control" type="text" name="txtprice" placeholder="Nhập Giá">
+        <input class="form-control " type="text" name="txtprice" placeholder="Nhập Giá">
         <lable>Thời Gian Khóa Học</lable>
-        <input class="form-control" type="date" name="txtcourstime" placeholder="Nhập Thời Khóa Học">
+        <input class="form-control " type="date" name="txtcourstime" placeholder="Nhập Thời Khóa Học">
         <lable>Thời Gian Học</lable>
-        <input class="form-control" type="text" name="txtduration" placeholder="Nhập Thời Gian Học">
+        <input class="form-control " type="text" name="txtduration" placeholder="Nhập Thời Gian Học">
         <lable>Hình ảnh</lable>
-        <input class="form-control" type="file" name="txtpicture" placeholder="Nhập ảnh">
+        <input class="form-control " type="file" name="txtpicture" placeholder="Nhập ảnh">
         <lable>HOT</lable>
-        <select class="form-control select-form" name="txthot" id="">
+        <select class="form-control select-form input-admin" name="txthot" id="">
             <option value="0">Normal</option>
             <option value="1">HOT</option>
         </select>
-        <button style="margin: 10px 0px 10px 0px;" class="btn btn-primary" type="submit">Thêm</button>
+        <button style=" margin: 10px 0px 10px 0px;" class="btn btn-primary" type="submit">Thêm</button>
     </form>
 
 </div>
 <hr>
 <div class="show-value">
-    <table class="table table-hover">
+    <table class="table table-striped">
         <thead>
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">Khoá Học</th>
+                <th>
+                <input class="form-control " type="text" name="txtcoursename" placeholder="Nhập Tên Khóa Học"></th>
                 <!-- <th scope="col">Mô Tả</th> -->
                 <th scope="col">Giá</th>
                 <th scope="col">Thời Gian Khoá Học</th>
