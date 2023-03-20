@@ -14,7 +14,7 @@ class AdminController extends Controller
 {
     public function admin()
     {
-        return view('admin.admin');
+        return view('admin.adpage');
     }
     public function admin_courses()
     {
@@ -26,7 +26,7 @@ class AdminController extends Controller
         return view('admin.courses', $values);
     }
     public function admin_subjects()
-    {   
+    {
         $data_course = Courses::all();
 
         $data = Subject::where('Subject.deleted',0)
@@ -54,11 +54,11 @@ class AdminController extends Controller
             'data1' => $data1,
             'data_lessions' => $data_lessions
         ];
-        
+
         return view('admin.lessions', $values);
     }
 
-    public function add_courses(Request $request){ 
+    public function add_courses(Request $request){
         $isExists = Courses::where('course_name', $request->course_name)->exists();
         if($isExists){
             return redirect()->back()->with('msg', 'exists');
@@ -135,7 +135,7 @@ class AdminController extends Controller
 
         public function delete_courses($id){
             $item = Courses::find($id);
-            
+
             $item->deleted= Auth::id();
             $item->update();
             return redirect('admin/courses');
@@ -153,7 +153,7 @@ class AdminController extends Controller
 
         public function delete_subject($id){
             $item = Subject::find($id);
-            
+
             $item->deleted= Auth::id();
             $item->update();
             return redirect('admin/subjects');
@@ -170,9 +170,14 @@ class AdminController extends Controller
 
         public function delete_lessions($id){
             $item = Lessions::find($id);
-            
+
             $item->deleted= Auth::id();
             $item->update();
             return redirect('admin/lessions');
         }
+    public function adpage()
+    {
+        return view('admin.adpage');
+    }
 }
+

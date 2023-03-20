@@ -41,7 +41,8 @@ Route::get('search',[myController::class,'search'])->name('search');
 
 
 Route::middleware([CheckLogin::class])->group(function(){
-    Route::get('/admin',[AdminController::class,'admin'])->name('admin');
+    Route::get('/admin',[AdminController::class,'admin'])->name('admin')->name('adpage');
+    Route::get('/admin/adpage',[AdminController::class,'adpage'])->name('adpage');
     Route::get('/admin/courses',[AdminController::class,'admin_courses'])->name('admin_courses');
     Route::post('/admin/courses/add',[AdminController::class,'add_courses']);
     Route::post('/admin/courses/edit',[AdminController::class,'edit_courses']);

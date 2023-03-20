@@ -21,7 +21,8 @@
         <div class="container-fluid">
             <div class="row  text-center">
                 <div class="col-lg-12  col-md-12 col-sm-12">
-                    <h2 data-scroll-reveal="enter from the bottom after 0.1s"> CHÀO MỪNG ĐẾN VỚI UAB </h2>
+                    <h2 data-scroll-reveal="enter from the bottom after 0.1s"> WELCOME TO UAB
+                    </h2>
 {{--                    <p class="text-info" style="font-style: italic">--}}
 {{--                        Trường Cao đẳng Nghệ thuật và Khoa học</p>--}}
                 </div>
@@ -45,23 +46,26 @@
             <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
                 <div class="about-div">
                     <i class="fa fa-paper-plane-o fa-4x icon-round-border"></i>
-                    <h3 style="text-align: center;">Giáo dục chất lượng
+                    <h3 style="text-align: center;">
+                        Quality Education
                     </h3>
-                    <p>
-                    Chất lượng giáo dục là nền tảng để phát triển bản thân và đóng góp cho xã hội. Nó giúp học sinh và sinh viên phát triển kỹ năng, kiến thức và tư duy sáng tạo. Ngoài ra, giáo dục tốt còn tạo ra cơ hội nghề nghiệp và thành công trong cuộc sống. Vì vậy, đầu tư vào giáo dục tốt là đầu tư vào tương lai của bản thân và đất nước.</p>
+                    <p>Quality education is the foundation for personal development and contribution to society. It helps students and students develop skills, knowledge and creative thinking. In addition, good education also creates career opportunities and success in life. Therefore, investing in good education is investing in the future of yourself and the country.</p>
+
                     <br>
-                    <a href="#contact-sec" class="btn btn-info btn-set">HỎI CHUYÊN GIA</a>
+                    <a href="#contact-sec" class="btn btn-info btn-set">
+                        ASK A PROFESSIONAL</a>
                 </div>
             </div>
             <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.5s">
                 <div class="about-div">
                     <i class="fa fa-bolt fa-4x icon-round-border"></i>
-                    <h3 style="text-align: center;">HỆ THỐNG</h3>
+                    <h3 style="text-align: center;">
+                        SYSTEM</h3>
                     <p>
-                        Một cách tiếp cận có hệ thống thường được sử dụng tại các dự án tại nơi làm việc. Mục tiêu của phương pháp này là xác định các phương tiện hiệu quả nhất để tạo ra các kết quả nhất quán và tối ưu. Nhiều công ty cần cách tiếp cận này để họ trang bị cho nhân viên đủ kiến ​​thức và nguồn lực để đạt được mục tiêu của công ty.
+                        A systematic approach is often used in projects at work. The goal of this method is to identify the most effective means of producing consistent and optimal results. Many companies need this approach so that they equip their employees with enough knowledge and resources to achieve the company's goals.
                     </p>
                     <br>
-                    <a href="#contact-sec" class="btn btn-info btn-set">HỎI CHUYÊN GIA</a>
+                    <a href="#contact-sec" class="btn btn-info btn-set">ASK A PROFESSIONAL</a>
                 </div>
             </div>
             <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.6s">
@@ -69,11 +73,13 @@
                     <i class="fa fa-magic fa-4x icon-round-border"></i>
                     <h3 style="text-align: center;">ONE TO ONE</h3>
                     <p>
-                        “One to One” – Phương pháp học không còn xa lạ trên thế giới.
-                        Đây là phương pháp hiệu quả để tăng cường sự tập trung, sự tự tin và động lực học tập. Học viên sẽ được đội ngũ giáo viên có kinh nghiệm hướng dẫn và đưa ra những phản hồi và đánh giá cụ thể để giúp cải thiện kỹ năng và kiến thức.
+
+                        “One to One” – The learning method is no longer strange in the world.
+                        This is an effective method to increase concentration, confidence and motivation to learn. Students will be guided by a team of experienced teachers and provide specific feedback and assessment to help improve skills and knowledge.
+
                     </p>
                     <br>
-                    <a href="#contact-sec" class="btn btn-info btn-set">HỎI CHUYÊN GIA</a>
+                    <a href="#contact-sec" class="btn btn-info btn-set">ASK A PROFESSIONAL</a>
                 </div>
             </div>
         </div>
@@ -82,7 +88,7 @@
         <div class="row text-center">
             <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
                 <h1 data-scroll-reveal="enter from the bottom after 0.2s" class="header-line">
-                    KHÓA HỌC </h1>
+                    COURSE </h1>
             </div>
         </div>
         <!--/.HEADER LINE END-->
@@ -96,9 +102,9 @@
             <div class="row text-center" >
                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2" >
                     <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">
-                        GIẢNG VIÊN</h1>
+                        LECTURERS</h1>
                     <p data-scroll-reveal="enter from the bottom after 0.3s">
-                        Những giảng viên tiêu biểu thành công
+                        Typical successful teachers
                     </p>
                 </div>
             </div>
@@ -115,9 +121,9 @@
         <div class="row text-center" >
             <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2" >
                 <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">
-                    HÀNH TRÌNH CHINH PHỤC ĐỈNH CAO </h1>
+                    JOURNEY TO CONQUER THE HIGH TOP </h1>
                 <p data-scroll-reveal="enter from the bottom after 0.3s">
-                    Môi trường học tập định hướng thành công !
+                    Success-oriented learning environment!
                 </p>
             </div>
         </div>
@@ -133,7 +139,7 @@
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="collapsed">
                                     <strong> 50+</strong>
-                                    TỈNH TRÊN TOÀN QUỐC
+                                    PROVINCE NATIONWIDE
                                 </a>
                             </h4>
                         </div>
@@ -144,8 +150,7 @@
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="collapsed">
                                     <strong> 400+</strong>
-                                    DOANH NGHIỆP HỢP TÁC
-                                </a>
+                                    COOPERATION ENTERPRISE                                </a>
                             </h4>
                         </div>
                     </div>
@@ -154,7 +159,7 @@
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="collapsed">
                                     <strong> 15300+</strong>
-                                    HỌC VIÊN ĐĂNG KÝ
+                                    STUDENTS REGISTER
                                 </a>
                             </h4>
                         </div>
@@ -164,7 +169,7 @@
                 <span style="font-size:40px;">
                     <strong> 1000 + </strong>
                     <hr />
-                    Trung Tâm
+Center
                 </span>
                 </div>
             </div>
@@ -177,9 +182,10 @@
                 <div class="row text-center">
                     <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
                         <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">
-                            LIÊN HỆ CHÚNG TÔI </h1>
+
+                            CONTACT US </h1>
                         <p data-scroll-reveal="enter from the bottom after 0.3s">
-                            Nếu bạn có bất kỳ câu hỏi nào hãy liên hệ với chúng tôi
+                            If you have any questions feel free to contact us
                         </p>
                     </div>
                 </div>
@@ -196,13 +202,14 @@
         <div class="row set-row-pad" data-aos="fade-right" style="transition: 1s linear all">
             <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1 " data-scroll-reveal="enter from the bottom after 0.4s">
                 <h2><strong>
-                        Địa điểm của chúng tôi </strong></h2>
+
+                        Our location </strong></h2>
                 <hr />
                 <div>
                     <h4>234/80 -UFG , New Street,</h4>
                     <h4>Switzerland.</h4>
                     <h4><strong>Call:</strong> + 67-098-907-1269 / 70 / 71 </h4>
-                    <h4><strong>Email: </strong>info@yourdomain.com</h4>
+                    <h4><strong>Email: </strong>uab@edu.com</h4>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1" data-scroll-reveal="enter from the bottom after 0.4s">

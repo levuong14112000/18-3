@@ -133,6 +133,13 @@
                     <p class="mb-3">
                       <i class="fa fa-2x fa-circle-notch text-primary-light"></i>
                     </p>
+                      @if(session('msg'))
+                          @if(session('msg') == 'exists')
+                              <div class="alert alert-danger">
+                                  <p>Please login again!</p>
+                              </div>
+                            @endif
+                      @endif
                     <h1 class="fw-bold mb-2">
                       Sign In
                     </h1>

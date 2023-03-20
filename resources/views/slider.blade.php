@@ -36,7 +36,7 @@
                 var curMinutes = curDate.getMinutes();
                 const lat = position.coords.latitude;
                 const long = position.coords.longitude;
-                const api_key = 'AIzaSyD4unJZ0VfF09vOXUlRe5_IgtZEOy9uwe4';
+                const api_key = 'AIzaSyBiG_-pyxMiGdhV_QTaNb-74avXlLjwO9U';
                 // Tạo URL yêu cầu Geocoding API
                 const url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${long}&key=${api_key}`;
                 // Gửi yêu cầu GET đến API
@@ -46,7 +46,7 @@
                         // Xử lý kết quả trả về để lấy địa chỉ chính xác nhất
                         const address = data.results[0].formatted_address;
                         console.log(address);
-                        document.querySelector(".address").innerHTML = address + " , " +curHours +  " giờ " +curMinutes +  " phút " +curSeconds + " giây " +curDay + "/" +curMonth + "/" +curYear;
+                        document.querySelector(".address").innerHTML = address + " , " +curHours +  " Hour " +curMinutes +  " Minute " +curSeconds + " Second " +curDay + "/" +curMonth + "/" +curYear;
                     })
                     .catch(error => {
                         console.log(error);

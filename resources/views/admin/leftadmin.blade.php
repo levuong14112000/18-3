@@ -1,6 +1,7 @@
 <ul class="list-group">
     <li class="list-group-item list-group-item-action active">
-        <a href="{{route('admin')}}" style="color:white;"><i class="fa-solid fa-house"></i> Trang chủ</a>
+        <a href="{{route('adpage')}}" style="color:white;"><i class="fa-solid fa-house"></i>
+            Home page</a>
     </li>
     <li class="list-group-item list-group-item-action">
         <a href="{{route('admin_courses')}}"><i class="fa-solid fa-bars-progress"></i> Courses</a>
@@ -13,6 +14,6 @@
     </li>
     <li class="list-group-item list-group-item-action">
         <a href="/logout">
-            <i class="fa-solid fa-right-from-bracket"></i> Thoát</a>
+            <i class="fa-solid fa-right-from-bracket"></i> Exit</a>
     </li>
 </ul>

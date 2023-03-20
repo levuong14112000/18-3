@@ -14,7 +14,8 @@
         @endforeach
     </div>
     <div class="set-lessions">
-        <a href="{{route('printpdf')}}" class="btn btn-primary">Tải về</a>
+        <a href="{{route('printpdf')}}" class="btn btn-primary">
+            Download</a>
     </div>
 </div>
 

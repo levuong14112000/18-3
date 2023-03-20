@@ -9,5 +9,5 @@ $count++;
 setcookie('count', $count, time() + 360000 );
 
 // Hiển thị số lần truy cập
-echo "Số lần truy cập: " . $count;
+echo "Number of hits: " . $count;
 ?>

@@ -16,14 +16,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style>
-        *{
-            transition: 500ms linear all;
-        }
         .adc{
             min-height: 70vh;
         }
         *{
             font-size: 1.5rem;
+        }
+        .main-admin{
+           background: url("{{asset('img/UABZoom8.jpg')}}");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 500px;
+
+
         }
     </style>
 

@@ -15,7 +15,7 @@
                 <div class="text-center">{{$h->course_name}}</div>
                 <div class="pb-1 btn btn-button ">{{number_format($h->price)}} VNĐ</div>
                 <div>
-                    <a class="btn btn-primary" href="{{route('kh',[$h->course_id])}}">Chi Tiết</a>
+                    <a class="btn btn-primary" href="{{route('kh',[$h->course_id])}}">Detail</a>
                 </div>
             </div>
         </div>

@@ -3,11 +3,13 @@
 @if(session('msg'))
 @if(session('msg') == 'exists')
 <div class="alert alert-danger">
-    <p>Môn học đã tồn tại</p>
+    <p>
+        The subject already exists</p>
 </div>
 @else
 <div class="alert alert-success">
-    <p>Thêm thành công</p>
+    <p>
+        More success</p>
 </div>
 @endif
 @endif
@@ -15,19 +17,22 @@
 <div class="input-value">
     <form action="/admin/subjects/add" method="post" enctype="multipart/form-data">
         @csrf
-        <lable>Tên Môn Học :</lable>
-        <input class="form-control" type="text" name="sub_name" placeholder="Nhập Tên Môn Học">
+        <lable>
+            Subject title :</lable>
+        <input class="form-control" type="text" name="sub_name" placeholder="
+Enter Subject Name">
         <!-- <lable>Nội Dung</lable>
         <textarea name="sub_content" class="form-control" id="" cols="30" rows="10"></textarea> -->
-        <lable>Hình</lable>
+        <lable>Image</lable>
         <input class="form-control" type="file" name="sub_picture" required>
-        <lable>Khoá Học</lable>
+        <lable>
+            Courses</lable>
         <select name="course_id" id="">
             @foreach($data_course as $item)
             <option value="{{$item->course_id}}">{{$item->course_name}}</option>
             @endforeach
         </select>
-        <lable>Giảng Viên</lable>
+        <lable>Lecturers</lable>
         <select name="user_id" id="">
             @foreach($data_user as $itemu)
             <option value="{{$itemu->user_id}}">{{$itemu->full_name}}</option>
@@ -38,7 +43,7 @@
             <option value="0">Normal</option>
             <option value="1">HOT</option>
         </select>
-        <button style="margin: 10px 0px 10px 0px;" class="btn btn-primary" type="submit">Thêm</button>
+        <button style="margin: 10px 0px 10px 0px;" class="btn btn-primary" type="submit">ADD</button>
     </form>
 
 </div>
@@ -48,12 +53,15 @@
         <thead>
             <tr>
                 <th scope="col">#</th>
-                <th scope="col">Môn Học</th>
+                <th scope="col">
+                    Subject</th>
                 <!-- <th scope="col">Nội Dung</th> -->
-                <th scope="col">Khoá Học</th>
-                <th scope="col">Giảng Viên</th>
+                <th scope="col">
+                    Courses</th>
+                <th scope="col">Lecturers</th>
                 <th scope="col">HOT</th>
-                <th scope="col">Thao Tác</th>
+                <th scope="col">
+                    Operation</th>
             </tr>
         </thead>
         <tbody>
@@ -91,20 +99,23 @@
                 <div class="modal-body">
                     <form action="/admin/subjects/edit" method="post" enctype="multipart/form-data">
                         @csrf
-                        <lable>Tên Môn Học :</lable>
+                        <lable>
+                            Subject title :</lable>
                         <input class="form-control" type="text" id="id" name="id" hidden>
-                        <input class="form-control" type="text" id="sub_name" name="sub_name" placeholder="Nhập Tên Môn Học">
+                        <input class="form-control" type="text" id="sub_name" name="sub_name" placeholder="Enter Subject Name
+">
                         <!-- <lable>Nội Dung</lable>
         <textarea name="sub_content" class="form-control" id="" cols="30" rows="10"></textarea> -->
                         <!-- <lable>Hình</lable>
                         <input class="form-control" type="file" name="sub_picture"> -->
-                        <lable>Khoá Học</lable>
+                        <lable>
+                            Courses</lable>
                         <select name="course_id" id="course_id">
                             @foreach($data_course as $item)
                                 <option value="{{$item->course_id}}">{{$item->course_name}}</option>
                             @endforeach
                         </select>
-                        <lable>Giảng Viên</lable>
+                        <lable>Lecturers</lable>
                         <select name="user_id" id="user_id">
                             @foreach($data_user as $itemu)
                             <option value="{{$itemu->user_id}}">{{$itemu->full_name}}</option>

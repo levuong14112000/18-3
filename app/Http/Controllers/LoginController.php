@@ -21,7 +21,7 @@ class LoginController extends Controller
         if(Auth::attempt($data)){
             return redirect('/admin');
         }else{
-            dump(false);
+            return redirect('/login')->with('msg', 'exists');
         }
     }
 

@@ -3,11 +3,13 @@
 @if(session('msg'))
 @if(session('msg') == 'exists')
 <div class="alert alert-danger">
-    <p>Bài học đã tồn tại</p>
+    <p>Lessons already exist
+    </p>
 </div>
 @else
 <div class="alert alert-success">
-    <p>Thêm thành công</p>
+    <p>More success
+    </p>
 </div>
 @endif
 @endif
@@ -15,18 +17,22 @@
 <div class="input-value">
     <form action="/admin/lessions/add" method="post" enctype="multipart/form-data">
         @csrf
-        <lable>Bài Học :</lable>
-        <input class="form-control" type="text" name="lession_name" placeholder="Nhập Bài Học">
-        <lable>Mô Tả</lable>
+        <lable>Lesson :
+        </lable>
+        <input class="form-control" type="text" name="lession_name" placeholder="Enter Lessons
+">
+        <lable>
+            Describe</lable>
         <textarea name="description" class="form-control" id="" cols="30" rows="10"></textarea>
-        <lable>Môn Học</lable>
+        <lable>Subject</lable>
         <br>
         <select name="subject_id" id="" class="form-control">
             @foreach($data1 as $item)
             <option value="{{$item->subject_id}}">{{$item->subject_name}}</option>
             @endforeach
         </select>
-        <button style="margin: 10px 0px 10px 0px;" class="btn btn-primary" type="submit">Gửi</button>
+        <button style="margin: 10px 0px 10px 0px;" class="btn btn-primary" type="submit">Send
+        </button>
     </form>
 
 </div>
@@ -36,9 +42,10 @@
         <thead>
             <tr>
                 <th scope="col">#</th>
-                <th scope="col">Bài Học</th>
-                <th scope="col">Môn Học</th>
-                <th scope="col">Thao Tác</th>
+                <th scope="col">
+                    Lesson</th>
+                <th scope="col">Subject</th>
+                <th scope="col">Operation</th>
             </tr>
         </thead>
         <tbody>
@@ -72,12 +79,16 @@
                 <div class="modal-body">
                     <form action="/admin/lessions/edit" method="post" enctype="multipart/form-data">
                         @csrf
-                        <lable>Bài Học :</lable>
+                        <lable>
+                            Lesson :</lable>
                         <input class="form-control" type="text" id="id" name="id" hidden>
-                        <input class="form-control" type="text" id="lession_name" name="lession_name" placeholder="Nhập Bài Học">
-                        <lable>Mô Tả</lable>
+                        <input class="form-control" type="text" id="lession_name" name="lession_name" placeholder="
+Enter Lessons
+">
+                        <lable>Describe</lable>
                         <textarea name="description" id="description"  class="form-control" id="" cols="30" rows="10"></textarea>
-                        <lable>Môn Học</lable>
+                        <lable>
+                            Subject</lable>
                         <br>
                         <select name="subject_id" id="subject_id" class="form-control">
                             @foreach($data1 as $item)

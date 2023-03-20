@@ -6,7 +6,7 @@
         /* outline:1px solid ;*/
     }
     body{
-        background: #D7272D;
+        background: rgba(28, 43, 75, 0.7);
         height: 100%;
         margin: 0;
         background-repeat: no-repeat;
@@ -113,7 +113,7 @@
 
     }
 </style>
-<div class=thankyoucontent>
+<div class=thankyoucontent style="max-height: 100vh">
     <div class="wrapper-1">
         <div class="wrapper-2">
             <img src="https://i.ibb.co/Lkn7rkG/thank-you-envelope.png" alt="thank-you-envelope" border="0">
@@ -123,10 +123,6 @@
             <button class="go-home"><a href="{{route('main')}}">
                     home page</a>
             </button>
-        </div>
-        <div class="footer-like">
-            <p>
-            </p>
         </div>
     </div>
 
