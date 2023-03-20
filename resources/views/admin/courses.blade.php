@@ -20,8 +20,8 @@
         <lable>Course Name:</lable>
         <input class="form-control " type="text" name="txtcoursename" placeholder="Enter Course Name">
         <lable>
-            Describe</lable>
-        <textarea name="txtdescription input-admin" class="form-control" id="" cols="30" rows="10"></textarea>
+            Desciption</lable>
+        <textarea name="txtdescription input-admin" class="form-control" id="" cols="30" rows="10" placeholder="Enter Desciption"></textarea>
         <lable>
             Price</lable>
         <input class="form-control " type="text" name="txtprice" placeholder="
@@ -30,13 +30,13 @@ Enter Price">
             Course Time</lable>
         <input class="form-control " type="date" name="txtcourstime" placeholder="
 Enter Course Time">
-        <lable>Study Time</lable>
+        <lable>Duration</lable>
         <input class="form-control " type="text" name="txtduration" placeholder="
 Enter Study Time">
         <lable>
             Image</lable>
         <input class="form-control " type="file" name="txtpicture" placeholder="
-Import photos">
+Import photos" required>
         <lable>HOT</lable>
         <select class="form-control select-form input-admin" name="txthot" id="">
             <option value="0">Normal</option>
@@ -109,7 +109,7 @@ Import photos">
                         <input class="form-control" type="text" id="txtcoursename" name="txtcoursename" placeholder="Enter Course Name
 ">
                         <lable>
-                            Describe</lable>
+                            Description</lable>
                         <textarea name="txtdescription" class="form-control" id="txtdescription" cols="30" rows="10"></textarea>
                         <lable>Price
                         </lable>
@@ -119,7 +119,7 @@ Enter Price">
                             Course Time</lable>
                         <input class="form-control" type="date" id="txtcourstime" name="txtcourstime" placeholder="
 Enter Course Time">
-                        <lable></lable>
+                        <lable>Duration</lable>
                         <input class="form-control" type="text" id="txtduration" name="txtduration" placeholder="
 Study Time">
                         <!-- <lable>Hình ảnh</lable>

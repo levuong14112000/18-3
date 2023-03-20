@@ -22,7 +22,7 @@
         <input class="form-control" type="text" name="lession_name" placeholder="Enter Lessons
 ">
         <lable>
-            Describe</lable>
+            Description</lable>
         <textarea name="description" class="form-control" id="" cols="30" rows="10"></textarea>
         <lable>Subject</lable>
         <br>

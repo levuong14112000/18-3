@@ -1,7 +1,7 @@
 <style>
     .header{
-        background-color: #007bff;
-        height: 20vh;
+        background-color: rgba(28, 43, 75, 1);
+        height: 15vh;
         margin-bottom: 10px;
     }
 </style>
