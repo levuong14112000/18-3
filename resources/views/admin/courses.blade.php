@@ -53,7 +53,7 @@ Import photos" required>
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">Courses</th>
-                <th>
+                <!-- <th> -->
                 <!-- <th scope="col">Mô Tả</th> -->
                 <th scope="col">Price</th>
                 <th scope="col">

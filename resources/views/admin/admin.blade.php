@@ -38,7 +38,7 @@
 @include('admin.headeradmin')
 <div class="container-fluid adc">
     <div class="row">
-        <div class="col-lg-2 col-md-2 col-sm-2" style="padding: 0;">
+        <div class="col-lg-2 col-md-2 col-sm-2" style="padding: 0; background-color: rgba(28, 43, 75, 1);max-height: 72vh;">
             @include('admin.leftadmin')
         </div>
         <div class="col-lg-10 col-md-10 col-sm-10">

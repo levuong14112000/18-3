@@ -31,7 +31,7 @@
             <option value="{{$item->subject_id}}">{{$item->subject_name}}</option>
             @endforeach
         </select>
-        <button style="margin: 10px 0px 10px 0px;" class="btn btn-primary" type="submit">Send
+        <button style="margin: 10px 0px 10px 0px;" class="btn btn-primary" type="submit">ADD
         </button>
     </form>
 

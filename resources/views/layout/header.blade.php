@@ -60,7 +60,7 @@
                 <li><a href="#faculty-sec">LECTURERS</a></li>
                 <li><a href="#contact-sec">CONTACT</a></li>
                 @if(Auth::check())
-                    <li><a href="/admin">HELLOO {{Auth::user()->username}}</a></li>
+                    <li><a href="/admin">HELLO {{Auth::user()->username}}</a></li>
                 @else
                     <li><a href="/login">LOGIN</a></li>
                 @endif
